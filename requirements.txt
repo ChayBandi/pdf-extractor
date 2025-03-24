@@ -1,6 +1,7 @@
 tensorflow
 streamlit
 transformers
+pipeline
 pymupdf
 pillow
 torch
