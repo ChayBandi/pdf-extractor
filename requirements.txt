@@ -1,7 +1,6 @@
 tensorflow
 streamlit
-transformers
-pipeline
+transformers==4.35.2
 pymupdf
 pillow
 torch
