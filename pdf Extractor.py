@@ -43,9 +43,9 @@ from PIL import Image
 import matplotlib.pyplot as plt
 
 # Initialize AI models
-summarizer = pipeline("summarization", model="facebook/bart-large-cnn", device=0)
-qa_pipeline = pipeline("question-answering", model="deepset/roberta-base-squad2")
-image_captioning_pipeline = pipeline("image-to-text", model="Salesforce/blip-image-captioning-large")
+summarizer = pipeline("summarization", model="facebook/bart-large-cnn", device=0, framework="pt")
+qa_pipeline = pipeline("question-answering", model="deepset/roberta-base-squad2",framework="pt")
+image_captioning_pipeline = pipeline("image-to-text", model="Salesforce/blip-image-captioning-large",framework="pt")
 
 # Function to extract text from the PDF
 def extract_text_from_pdf(pdf_path):
