@@ -43,7 +43,7 @@ from PIL import Image
 import matplotlib.pyplot as plt
 
 # Initialize AI models
-summarizer = pipeline("summarization", model="facebook/bart-large-cnn", device=0, framework="pt")
+summarizer = pipeline("summarization", model="facebook/bart-large-cnn", device= -1, framework="pt")
 qa_pipeline = pipeline("question-answering", model="deepset/roberta-base-squad2",framework="pt")
 image_captioning_pipeline = pipeline("image-to-text", model="Salesforce/blip-image-captioning-large",framework="pt")
 
