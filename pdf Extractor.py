@@ -4,25 +4,23 @@
 # In[1]:
 
 
-get_ipython().system('pip install transformers pymupdf Pillow torch torchvision torchaudio')
 
 
 # In[3]:
 
 
-pip install pdf2image transformers pillow
 
 
 # In[4]:
 
 
-pip install keras==2.14.0  # Last stable version before Keras 3
+ # Last stable version before Keras 3
 
 
 # In[7]:
 
 
-pip install streamlit
+
 
 
 # In[9]:
